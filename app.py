@@ -6,7 +6,9 @@ import json
 import re
 
 # Configure the Generative AI API key
+st.write("API:", st.secrets["API"])
 genai.configure(api_key=os.environ["API"])
+
 
 # Function to get data from the Gemini model
 def get_gemini_data(soft_drink):
